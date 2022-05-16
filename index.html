@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coghlan</title>
+    <link rel="stylesheet" href="./css/sty.css">
+    <script src="https://kit.fontawesome.com/9519ab4c98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <img src="./img/logo-szabo-sss.png" class="logo nav-link" alt="Logo Coghlan">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">El Barrio</a>            
+                </li>
+                <li class="nav-menu-item">
+                    <a href="arte.html" class="nav-menu-link nav-link">Arte</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="animate__animated animate__flipInX" style="text-shadow: 2px 2px 5px red">Coghlan</h1>
+        <h1 class="animate__animated animate__flipInX" style="text-shadow: 2px 2px 5px red">El Barrio</h1>
+    
+		<img src="./img/Barrio/1_s.jpg" class="pict" alt="1">
+        <img src="./img/Barrio/2_s.jpg" class="pict" alt="2">
+        <img src="./img/Barrio/3_s.jpg" class="pict" alt="3">
+        <img src="./img/Barrio/4_s.jpg" class="pict" alt="4">
+        
+    </main>
+
+    <footer class="footer">
+        <br>
+        <p style="display: block; text-align: center; font-family: sans-serif; font-size: 12px; color: white">
+            Derechos reservados
+            <script type="text/javascript">
+                var mm=new Date();
+                var m2 = mm.getMonth() + 1;
+                var mesok = (m2 < 10) ? '0' + m2 : m2;
+                var mesok=new Array(12);
+                mesok[0]="Enero";
+                mesok[1]="Febrero";
+                mesok[2]="Marzo";
+                mesok[3]="Abril";
+                mesok[4]="Mayo";
+                mesok[5]="Junio";
+                mesok[6]="Julio";
+                mesok[7]="Agosto";
+                mesok[8]="Septiembre";
+                mesok[9]="Octubre";
+                mesok[10]="Noviembre";
+                mesok[11]="Diciembre";
+                document.write(mesok[mm.getMonth()]);
+            </script>            
+            &copy
+            <script type="text/javascript">
+                document.write(mm.getFullYear());
+            </script>
+        </p>
+        <br>
+
+    </footer>
+
+
+</body>
+</html>

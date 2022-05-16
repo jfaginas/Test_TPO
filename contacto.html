@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilo propietario -->
+    <link rel="stylesheet" href="./css/sty.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+    <script src="https://kit.fontawesome.com/9519ab4c98.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./img/coghlan.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="./js/script.js"></script>
+    <title>Coghlan</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="./img/logo-szabo-sss.png" class="logo nav-link" alt="Logo Coghlan">
+            <!-- <a href="#" class="logo nav-link">Logo</a> -->
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">El Barrio</a>            
+                </li>
+                <li class="nav-menu-item">
+                    <a href="arte.html" class="nav-menu-link nav-link">Arte</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario animate_animated animate_flipInY">
+        <form action="https://formspree.io/f/xwkywwrl" method="POST">
+    
+            <input type="text" class="campos" required maxlength="20" name="txt_Apellido" id="txt_Apellido" placeholder="Ingrese su apellido">
+            <input type="text" class="campos" required maxlength="20" name="txt_Nombre" id="txt_Nombre" placeholder="Ingrese su nombre">
+            <input type="text" class="campos" required maxlength="20" name="txt_Pais" id="txt_Pais" placeholder="Ingrese su pais">
+            <input type="email" class="campos" required name="correo"placeholder="Ingrese su e-mail"> <br>
+            <label for="chk_Interesado" id="importante">Estoy interesadx en recibir información adicional</label>
+            <input name="chk_Interesado" type="checkbox" value="1" class="chk_box"><br>
+            <label class="comentarios">Ingrese sus comentarios: 
+                <textarea name="mensaje" cols="45" rows="10" charswidth="140" id="caja-mensaje"></textarea>
+            </label>
+            <button class ="pulsador" type="submit">Enviar</button>
+            <button class ="pulsador" type="reset">Borrar</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <br>
+        <p style="display: block; text-align: center; font-family: Verdana; font-size: 12px; color: white">
+            Derechos reservados
+            <script type="text/javascript">
+                var mm=new Date();
+                var m2 = mm.getMonth() + 1;
+                var mesok = (m2 < 10) ? '0' + m2 : m2;
+                var mesok=new Array(12);
+                mesok[0]="Enero";
+                mesok[1]="Febrero";
+                mesok[2]="Marzo";
+                mesok[3]="Abril";
+                mesok[4]="Mayo";
+                mesok[5]="Junio";
+                mesok[6]="Julio";
+                mesok[7]="Agosto";
+                mesok[8]="Septiembre";
+                mesok[9]="Octubre";
+                mesok[10]="Noviembre";
+                mesok[11]="Diciembre";
+                document.write(mesok[mm.getMonth()]);
+            </script>            
+            &copy
+            <script type="text/javascript">
+                document.write(mm.getFullYear());
+            </script>
+        </p>
+        <br>
+
+    </footer>
+
+</body>
+</html>
